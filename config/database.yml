@@ -82,8 +82,8 @@ production:
   primary: &primary_production
     <<: *default
     database: horoscopes_production
-    username: horoscopes
-    password: <%= ENV["HOROSCOPES_DATABASE_PASSWORD"] %>
+    username: postgress
+    password: ''
   cache:
     <<: *primary_production
     database: horoscopes_production_cache
