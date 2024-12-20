@@ -1,0 +1,63 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+aries:
+  name: Aries
+  description: Aries is a fire sign.
+  period: March 21 – April 19
+
+taurus:
+  name: Taurus
+  description: Taurus is an earth sign.
+  period: April 20 – May 20
+
+gemini:
+  name: Gemini
+  description: Gemini is an air sign.
+  period: May 21 – June 20
+
+cancer:
+  name: Cancer
+  description: Cancer is a water sign.
+  period: June 21 – July 22
+
+leo: 
+  name: Leo
+  description: Leo is a fire sign.
+  period: July 23 – August 22
+
+virgo:
+  name: Virgo
+  description: Virgo is an earth sign.
+  period: August 23 – September 22
+
+libra: 
+  name: Libra
+  description: Libra is an air sign.
+  period: September 23 – October 22
+
+scorpio:
+  name: Scorpio
+  description: Scorpio is a water sign.
+  period: October 23 – November 21
+
+sagittarius:
+  name: Sagittarius
+  description: Sagittarius is a fire sign.
+  period: November 22 – December 21
+
+capricorn:
+  name: Capricorn
+  description: Capricorn is an earth sign.
+  period: December 22 – January 19
+
+aquarius:
+  name: Aquarius
+  description: Aquarius is an air sign.
+  period: January 20 – February 18
+
+pisces:
+  name: Pisces
+  description: Pisces is a water sign.
+  period: February 19 – March 20
+
+
