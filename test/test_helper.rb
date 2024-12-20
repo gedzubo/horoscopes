@@ -10,6 +10,11 @@ module ActiveSupport
     # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
     fixtures :all
 
+    DEFAULT_PASSWORD = "password".freeze
+
     # Add more helper methods to be used by all tests here...
+    def sign_in(user, password = DEFAULT_PASSWORD)
+      post session_url, params: { email_address: user.email_address, password: password }
+    end
   end
 end
