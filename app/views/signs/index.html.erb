@@ -5,16 +5,31 @@
 
   <% content_for :title, "Signs" %>
 
-  <div class="flex justify-between items-center">
+  <div class="flex justify-between items-center my-4">
     <h1 class="font-bold text-4xl">Signs</h1>
   </div>
 
-  <div id="signs" class="min-w-full">
-    <% @signs.each do |sign| %>
-      <%= render sign %>
-      <p>
-        <%= link_to "Show this sign", sign, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-      </p>
-    <% end %>
+  <div id="signs" class="my-4">
+    <table class="min-w-full">
+      <thead>
+        <tr>
+          <th class="py-2">Name</th>
+          <th class="py-2">Period</th>
+          <th class="py-2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @signs.each do |sign| %>
+          <tr>
+            <td class="border px-2 py-2"><%= sign.name %></td>
+            <td class="border px-2 py-2"><%= sign.period %></td>
+            <td class="border px-2 py-2">
+              <%= link_to "Show", sign, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+              <%= link_to "Edit", edit_sign_path(sign), class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
 </div>
