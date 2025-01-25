@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :horoscopes
   resources :signs, only: [ :index, :show, :edit, :update ]
   resource :session
   resources :passwords, param: :token

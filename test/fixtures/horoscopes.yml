@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  body: MyText
+  sign: one
+  start_date: 2025-01-25
+  end_date: 2025-01-25
+
+two:
+  title: MyString
+  body: MyText
+  sign: two
+  start_date: 2025-01-25
+  end_date: 2025-01-25
