@@ -1,0 +1,2 @@
+class HoroscopeType < ApplicationRecord
+end

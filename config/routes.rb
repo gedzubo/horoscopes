@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :horoscope_types
   resources :horoscopes
   resources :signs, only: [ :index, :show, :edit, :update ]
   resource :session
