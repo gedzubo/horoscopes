@@ -2,7 +2,9 @@ require "test_helper"
 
 class HoroscopeTypesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @horoscope_type = horoscope_types(:one)
+    @horoscope_type = horoscope_types(:daily)
+    @user = users(:one)
+    sign_in(@user)
   end
 
   test "should get index" do

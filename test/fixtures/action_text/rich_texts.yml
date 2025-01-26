@@ -1,4 +1,9 @@
-# one:
-#   record: name_of_fixture (ClassOfFixture)
-#   name: content
-#   body: <p>In a <i>million</i> stars!</p>
+first_horoscope_body:
+  record: first_horoscope (Horoscope)
+  name: body
+  body: <p>Prepare! Your entire life is changing!</p>
+
+second_horoscope_body:
+  record: second_horoscope (Horoscope)
+  name: body
+  body: <p>Spirit lead you here..</p>
