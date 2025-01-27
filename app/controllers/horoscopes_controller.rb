@@ -3,7 +3,7 @@ class HoroscopesController < ApplicationController
 
   # GET /horoscopes or /horoscopes.json
   def index
-    @horoscopes = Horoscope.all
+    @horoscopes = Horoscope.page params[:page]
   end
 
   # GET /horoscopes/1 or /horoscopes/1.json
