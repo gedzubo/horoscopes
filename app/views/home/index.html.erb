@@ -4,7 +4,7 @@
     <% @signs.each do |sign| %>
       <div class="bg-white p-4 rounded-lg shadow-md content-center">
         <h2 class="font-bold text-2xl"><%= sign.name %></h2>
-        <%= link_to "Show me my horoscope", sign, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium mt-4" %>
+        <%= link_to "Show me my horoscope", "/#{sign.name.downcase}", class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium mt-4" %>
       </div>
     <% end %>
   </div>
